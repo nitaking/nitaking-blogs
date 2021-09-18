@@ -6,12 +6,12 @@ import { config } from '@site.config';
 import { members } from '@members';
 import { ContentWrapper } from '@src/components/ContentWrapper';
 import { PageSEO } from '@src/components/PageSEO';
-import { getMemberPath } from '@src/utils/helper';
+import { getAboutPath } from '@src/utils/helper';
 import { Member } from '@src/types';
 
 const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
-    <Link href={getMemberPath(member.id)}>
+    <Link href={getAboutPath(member.id)}>
       <a className="member-card">
         <div className="member-card__avatar">
           <img

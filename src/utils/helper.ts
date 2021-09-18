@@ -23,6 +23,6 @@ export function getHostFromURL(str: string) {
 export function getFaviconSrcFromHostname(hostname: string) {
   return `https://www.google.com/s2/favicons?domain=${hostname}`;
 }
-export function getMemberPath(id: string) {
-  return `/members/${encodeURIComponent(id)}`;
+export function getAboutPath(id: string) {
+  return `/about/${encodeURIComponent(id)}`;
 }
